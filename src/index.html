@@ -4,50 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Essa página é um portifólio de André Filipe de Medeiros">
+    <meta name="description" content="Essa página é um portfólio de André Filipe de Medeiros">
     <meta name="keywords" content="portfólio,programador,programação,desenvolvedor,André,Filipe,Medeiros">
     <meta name="author" content="André Filipe de Medeiros">
     <title>André Medeiros</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .header{
+            background-color: rgb(73, 70, 253);
+            padding: 30px;
+            text-align: center;
+        }
+        .menu{
+            background-color: rgb(232, 125, 59);
+            overflow: hidden;
+        }
+        .menu a{
+            color: black;
+            padding: 14px 16px;
+            float: left;
+            display: block;
+            text-decoration: none;
+        }
+        .section{
+            background-color: #e4e4e4;
+            padding: 1px;
+            width: 100%;
+        }
+        .section img,h2{
+            margin: 0 auto; /* Adiciona margem automática para centralizar horizontalmente */
+            display: block; /* Garante que a imagem será tratada como bloco */
+        }
+        .section h2{
+            text-align: center;
+            padding: 10px;
+        }
+        .section p,ul{
+            margin-left: 10%;
+            text-align: justify;
+        }
+        .footer{
+            background-color: rgb(73, 70, 253);
+            text-align: center;
+            padding: 10px;
+        }
+        .footer p{
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Apresentação</h1>
+    <!--TAG SEMÂNTICA PARA O TOPO-->
+    <header class="header">
+        <h1>Portfólio de André Medeiros</h1>
+    </header>
 
-    <h2>Boas-vindas!</h2>
-
-    <img src="assets/imgs/andre-650x650.jpg" width="300" 
-    alt="Foto de André sorrindo com o fundo laranja, azul e branco desfocado"> 
-
-    <p> 
-    Muito prazer, chamo-me André. <br>
-    Sou estudante de Engenharia de Computação na Universidade Federal do Ceará (UFC), encontro-me no 7º período do curso.<br>
-    Sou apaixonado por tecnologia e me interesso por aprender coisas novas. <br> <br>
-
-    Atualmente, possuo interesse maior por ciência de dados e tecnologias aplicadas à transformação digital. <br>
-    Durante meus estudos, participei de projetos de hardware e de software. <br>
-    Aqui se encontram minhas experiências e informações sobre mim. <br> <br>
+    <!--TAG SEMÂNTICA PARA O MENU-->
+    <nav class="menu">
+        <a href="index.html"><img src="assets/imgs/home-icon.png" width="18"> Página inicial</a>
+        <a href="pages/curriculum-vitae.html"><img src="assets/imgs/resume-icon.png" width="18"> Curriculum vitae</a>
+        <a href="pages/projects.html"><img src="assets/imgs/work-icon.png" width="18"> Projetos</a>
+        <a href="pages/contact-me.html"><img src="assets/imgs/email-icon.png" width="18"> Contacte-me</a>
+    </nav>
     
-    Obrigado.
-    </p> 
-    
-    <h2>Áreas de interesse</h2>
+    <!--TAG SEMÂNTICA MAIN-->
+    <section class="section">
+        <h2>Apresentação</h2>
+        
+        <img src="assets/imgs/andre-650x650.jpg" width="20%" 
+        alt="Foto de André sorrindo com o fundo laranja, azul e branco desfocado"> 
+        
+        <p> 
+        Muito prazer, chamo-me André. <br>
+        Sou estudante de Engenharia de Computação na Universidade Federal do Ceará (UFC), encontro-me no 7º período do curso.<br>
+        Sou apaixonado por tecnologia e me interesso por aprender coisas novas. <br> <br>
 
-    <p>Lista de principais áreas de interesse baseada em minhas experiências:</p>
+        Atualmente, possuo interesse maior por ciência de dados e tecnologias aplicadas à transformação digital. <br>
+        Durante meus estudos, participei de projetos de hardware e de software. <br>
+        Aqui se encontram minhas experiências e informações sobre mim. <br> <br>
+        
+        Obrigado.
+        </p> 
 
-    <ul>
-        <li>Estatística, ciência de dados e inteligência artificial;</li>
-        <li>Desenvolvimento web: frontend e backend;</li>
-        <li>Computação em nuvem, sistemas distribuídos e redes;</li>
-        <li>Ambientes linux, WSL, docker e versionamento de código com git;</li>
-        <li>Sistemas embarcados e internet das coisas (IoT).</li>
-    </ul>
+        <h2>Áreas de interesse</h2>
 
-    <hr>
-    <a href="index.html"><img src="assets/imgs/home-icon.png" width="18"> Página inicial</a> <br>
-    <a href="pages/curriculum-vitae.html"><img src="assets/imgs/resume-icon.png" width="18"> Curriculum vitae</a> <br>
-    <a href="pages/projects.html"><img src="assets/imgs/work-icon.png" width="18"> Projetos</a> <br>
-    <a href="pages/contact-me.html"><img src="assets/imgs/email-icon.png" width="18"> Contacte-me</a> <br>
-    <a href="https://www.linkedin.com/in/afmedeiros/" target="_blank"><img src="assets/imgs/linkedin-icon.png" width="18"> LinkedIn</a>
+        <p>Lista de principais áreas de interesse baseada em minhas experiências:</p>
+
+        <ul>
+            <li>Estatística, ciência de dados e inteligência artificial;</li>
+            <li>Desenvolvimento web: frontend e backend;</li>
+            <li>Computação em nuvem, sistemas distribuídos e redes;</li>
+            <li>Ambientes linux, WSL, docker e versionamento de código com git;</li>
+            <li>Sistemas embarcados e internet das coisas (IoT).</li>
+        </ul>
+    </section>
+
+
+    <footer class="footer">
+        <p>
+        Autor: André F. de Medeiros
+        <a href="https://www.linkedin.com/in/afmedeiros/" target="_blank"><img src="assets/imgs/linkedin-icon.png" width="18"></a>
+        </p>
+    </footer>
 
 </body>
 
