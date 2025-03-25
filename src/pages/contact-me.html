@@ -33,7 +33,7 @@
     
         <h3>Formulário</h3>
         <p>Caso prefira, utilize o formulário para me enviar uma mensagem:</p>
-        <form action="" method="post">
+        <form>
             <label for="name-text">Nome*:</label> <br>
             <input type="text" id="name-text" placeholder="Digite seu nome" required>
             <br><br>
@@ -46,7 +46,7 @@
             <label for="msg-textarea">Mensagem*:</label> <br>
             <textarea required id="msg-textarea" cols="70" rows="10" placeholder="Digite sua mensagem aqui"></textarea>
             <br><br>
-            <input class="section-button" type="submit" value="Enviar">
+            <input onclick="sendForm()" class="section-button" type="submit" value="Enviar">
             <br><br>
         </form>
     
@@ -58,5 +58,7 @@
             <a href="https://www.linkedin.com/in/afmedeiros/" target="_blank"><img src="../assets/imgs/linkedin-icon.png" width="18"></a>
         </p>
     </footer>
+
+    <script src="../scripts/index.js"></script>
 </body>
 </html>
