@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.header{
+    background-color: rgb(73, 70, 253);
+    padding: 30px;
+    text-align: center;
+}
+.menu{
+    background-color: rgb(232, 125, 59);
+    overflow: hidden;
+}
+.menu a{
+    color: black;
+    padding: 14px 16px;
+    float: left;
+    display: block;
+    text-decoration: none;
+}
+.section{
+    background-color: #e4e4e4;
+    padding: 1px;
+    width: 100%;
+}
+.section img{
+    margin: 0 auto; /* Adiciona margem automática para centralizar horizontalmente */
+    display: block; /* Garante que a imagem será tratada como bloco */
+}
+.section h2{
+    text-align: center;
+    padding: 10px;
+}
+.section p,ul,h3,form{
+    margin-left: 10%;
+    text-align: justify;
+    margin-bottom: 1%;
+}
+.section a{
+    text-decoration: none;
+}
+.section iframe{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 1%;
+}
+.footer{
+    background-color: rgb(73, 70, 253);
+    text-align: center;
+    padding: 10px;
+}
+.footer p{
+    color: black;
+}
